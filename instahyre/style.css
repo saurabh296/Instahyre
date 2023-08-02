@@ -1,0 +1,82 @@
+.btn-custom-hover:hover {
+    background: #02BFA0;
+    padding-bottom: 2px;
+    border-radius: 3px;
+    padding: 4px 8px;
+    color: white;
+}
+.header1{
+    background-image: url("images/meeting\ images.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+/* testiomonial*/
+.testimonial{
+    width: 60%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+}
+@media(max-width:700px){
+    .testimonial-col img {
+        margin-left: 0px;
+        margin-right: 15px;
+    }
+}
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff; /* Optional: Add a border to the circular images */
+    border-style: groove;
+}
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.hoverable-btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #02BFA0;
+    color: #02BFA0;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.hoverable-btn:hover {
+    background-color: #02BFA0;
+    color: #fff;
+}
+
+.hoverable-btn::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid #007bff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hoverable-btn:hover::before {
+    opacity: 1;
+}
